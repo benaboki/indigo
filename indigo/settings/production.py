@@ -1,8 +1,8 @@
 from .base import *
 
 # Configure default domain name
-#ALLOWED_HOSTS = [os.environ['WEBSITE_SITE_NAME'] + '.akn4undocs.ipbes.net', '127.0.0.1'] if 'WEBSITE_SITE_NAME' in os.environ else []
-ALLOWED_HOSTS = ['indigo.akn4undocs.ipbes.net', 'www.indigo.akn4undocs.ipbes.net','127.0.0.1', 'localhost', '172.17.0.5']
+ALLOWED_HOSTS = [os.environ['WEBSITE_SITE_NAME'] + '.akn4undocs.ipbes.net', '127.0.0.1'] if 'WEBSITE_SITE_NAME' in os.environ else []
+#ALLOWED_HOSTS = ['indigo.akn4undocs.ipbes.net', 'www.indigo.akn4undocs.ipbes.net','127.0.0.1', 'localhost', '172.17.0.5']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
