@@ -12,7 +12,7 @@ DATABASES['default'].update(db_from_env)
 
 # ##### SECURITY CONFIGURATION ############################
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_AGE = 1209600
 CSRF_COOKIE_SECURE = True
