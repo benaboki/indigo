@@ -51,10 +51,11 @@ google-api-python-client==1.9.3
 google-auth==1.18.0
 google-auth-httplib2==0.0.4
 googleapis-common-protos==1.52.0
+gunicorn==20.0.4
 httplib2==0.18.1
 idna==2.10
 importlib-metadata==1.7.0
--e git+https://github.com/benaboki/indigo.git@ffcf137c6639fea9ed54f1793e13205ddc87a939#egg=indigo
+-e git+https://github.com/benaboki/indigo.git@244d4c4e67743cd993508fb515e53e5741229944#egg=indigo
 iso8601==0.1.12
 jmespath==0.10.0
 jsonpatch==1.26
