@@ -301,7 +301,7 @@ REST_FRAMEWORK = {
 
 
 SUPPORT_EMAIL = os.environ.get('SUPPORT_EMAIL')
-INDIGO_ORGANISATION = os.environ.get('INDIGO_ORGANISATION', 'Indigo Platform')
+INDIGO_ORGANISATION = os.environ.get('INDIGO_ORGANISATION', 'AKN4UN Platform')
 INDIGO_URL = os.environ.get('INDIGO_URL', 'http://localhost:8000')
 INDIGO_USER_PROFILE_URL = 'indigo_social:user_profile'
 INDIGO_CONTENT_API_VERSIONED = True
@@ -435,4 +435,4 @@ USE_NATIVE_JSONFIELD = True
 # Adminstrators intended to receive email notifications
 # Each item in the list should be a tuple of (Full name, email address). Example:
 # [('Indigo Admin', 'indigoadmin@example.com')]
-ADMINS = []
+ADMINS = [('Benedict Omare', 'benedict.omare@un.org')]
