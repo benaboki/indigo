@@ -1,9 +1,7 @@
 """
 Django settings for indigo project.
-
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
-
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
@@ -435,4 +433,4 @@ USE_NATIVE_JSONFIELD = True
 # Adminstrators intended to receive email notifications
 # Each item in the list should be a tuple of (Full name, email address). Example:
 # [('Indigo Admin', 'indigoadmin@example.com')]
-ADMINS = [('Benedict Omare', 'benedict.omare@un.org')]
+ADMINS = [('Benedict Omare', 'ipbes.registration@ipbes.net')]
