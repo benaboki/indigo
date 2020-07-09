@@ -103,7 +103,7 @@ You can test that Slaw is installed with `slaw --version`:
 
 ```bash
 $ slaw --version
-slaw 1.0.0
+slaw 10.1.0
 ```
 
 You will also need `pdftotext` to import PDF files. On Mac, you can use Homebrew and run `brew install poppler`.

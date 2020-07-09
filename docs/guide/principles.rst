@@ -51,7 +51,7 @@ This is all possible because the guide is written using `reStructured Text <http
     To achieve this, the platform must capture the **metadata**, **content** and **structure** of the document separately from its **presentation**.
 
     - **Metadata** describes the document as a piece of work and includes information such as its title, publication date, language and country. This data allows users to classify, browse and search for documents and is also used when presenting the document.
-    - **Structure** is the heirarchy of the document, including chapter, part and section information. Capturing the structure makes it possible to provide intuitive user experiences, such as an interface for browsing through a document by section or linking between different sections of a document or between documents.
+    - **Structure** is the hierarchy of the document, including chapter, part and section information. Capturing the structure makes it possible to provide intuitive user experiences, such as an interface for browsing through a document by section or linking between different sections of a document or between documents.
     - **Content** is the actual words of the document, including headings, tables and paragraph numbers, and forms the core of the document.
     - **Presentation** is how the document is physically presented to the user and includes typography, layout, colour and formatting.
 
