@@ -43,13 +43,8 @@ SECURE_HSTS_PRELOAD = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
 #### AZURE BLOB STORAGE ####
-#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-DEFAULT_FILE_STORAGE = 'backend.custom_azure.AzureMediaStorage'
-STATICFILES_STORAGE = 'backend.custom_azure.AzureStaticStorage'
-
-# AZURE storage
-DEFAULT_FILE_STORAGE = 'backend.custom_azure.AzureMediaStorage'
-#STATICFILES_STORAGE = 'backend.custom_azure.AzureStaticStorage
+DEFAULT_FILE_STORAGE = 'indigo.custom_azure.AzureMediaStorage'
+STATICFILES_STORAGE = 'indigo.custom_azure.AzureStaticStorage'
 
 STATIC_LOCATION = "static"
 MEDIA_LOCATION = "media"
