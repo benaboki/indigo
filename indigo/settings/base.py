@@ -87,6 +87,9 @@ INSTALLED_APPS = (
     'ckeditor',
     'corsheaders',
 
+    # forms
+    'crispy_forms',
+     
     # required for commenting on tasks
     'django_comments',
 )

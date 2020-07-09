@@ -102,3 +102,6 @@ zipp==3.1.0
 azure-common==1.1.25
 # Upgrade to 12.x.x once https://github.com/jschneier/django-storages/pull/805/ is merged
 azure-storage-blob==2.1.0
+
+# Add crispy forms
+django-crispy-forms==1.9.0
