@@ -177,17 +177,6 @@ TEMPLATES = [
     }
 ]
 
-# attachments: AZURE
-if not DEBUG:
-    DEFAULT_FILE_STORAGE = 'indigo.custom_azure.AzureMediaStorage'
-    AZURE_ACCOUNT_NAME = os.environ.get('AZURE_ACCOUNT_NAME')
-    STATIC_LOCATION = "static"
-    MEDIA_LOCATION = "media"
-    AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-    STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
-    MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/' 
-
-
 # attachments: AWS S3 STORAGE 
 #if not DEBUG:
     #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
