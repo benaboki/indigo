@@ -11,12 +11,9 @@ DATABASES['default'].update(db_from_env)
 
 #### AZURE BLOB STORAGE ####
 DEFAULT_FILE_STORAGE = 'indigo.custom_azure.AzureMediaStorage'
-STATICFILES_STORAGE = 'indigo.custom_azure.AzureStaticStorage'
 AZURE_ACCOUNT_NAME = os.environ.get('AZURE_ACCOUNT_NAME')
-STATIC_LOCATION = "static"
 MEDIA_LOCATION = "media"
 AZURE_ACCOUNT_NAME = os.environ.get('AZURE_ACCOUNT_NAME')
 AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
 # the URL for assets 
-STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
 MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/' 
