@@ -1,6 +1,7 @@
 azure-common==1.1.25
 azure-core==1.7.0
-azure-storage-blob==12.3.2
+azure-storage-blob==2.1.0
+azure-storage-common==2.1.0
 beautifulsoup4==4.9.1
 boto3==1.14.18
 botocore==1.17.18
@@ -62,7 +63,7 @@ gunicorn==20.0.4
 httplib2==0.18.1
 idna==2.10
 importlib-metadata==1.7.0
--e git+https://github.com/benaboki/indigo.git@8dc84cc70a0143432603485f41c3dc8b04e8bf14#egg=indigo
+-e git+https://github.com/benaboki/indigo.git@389829a4d1b51b9489b3954cd05ee35800c1a698#egg=indigo
 iso8601==0.1.12
 isodate==0.6.0
 jmespath==0.10.0
