@@ -61,7 +61,7 @@ gunicorn==20.0.4
 httplib2==0.18.1
 idna==2.10
 importlib-metadata==1.7.0
--e git+https://github.com/benaboki/indigo.git@73667a085bf4da8a854847ec6d8274f9021ca887#egg=indigo
+-e git+https://github.com/benaboki/indigo.git@302711a3d397b9189088c16ca473eeb6ea2bcad0#egg=indigo
 iso8601==0.1.12
 isodate==0.6.0
 jmespath==0.10.0
