@@ -180,15 +180,15 @@ TEMPLATES = [
 # attachments
 if not DEBUG:
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-    AWS_S3_FILE_OVERWRITE = False
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_S3_BUCKET')
-    AWS_S3_REGION_NAME = 'eu-west-1'
-    AWS_DEFAULT_ACL = None
-    AWS_S3_OBJECT_PARAMETERS = {
-        'CacheControl': 'max-age=86400',
-    }
+    #AWS_S3_FILE_OVERWRITE = False
+    #AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    #AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    #AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_S3_BUCKET')
+    #AWS_S3_REGION_NAME = 'eu-west-1'
+    #AWS_DEFAULT_ACL = None
+    #AWS_S3_OBJECT_PARAMETERS = {
+        #'CacheControl': 'max-age=86400',
+    #}
 
 
 # Caches
@@ -282,10 +282,17 @@ PIPELINE = {
 
 
 # SSL indicator from the nginx proxy
+# https://docs.djangoproject.com/en/2.2/ref/settings/#csrf-cookie-secure
+# https://docs.djangoproject.com/en/2.2/ref/settings/#csrf-cookie-httponly
+# https://docs.djangoproject.com/en/dev/ref/settings/#secure-proxy-ssl-header
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
+# # https://docs.djangoproject.com/en/dev/topics/security/#ssl-https
+# # https://docs.djangoproject.com/en/dev/ref/settings/#secure-hsts-seconds
+# # # TODO: set this to 60 seconds first and then to 518400 once you prove the former works
 SECURE_HSTS_SECONDS = 3600
+# # https://docs.djangoproject.com/en/dev/ref/settings/#secure-hsts-include-subdomains
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 
