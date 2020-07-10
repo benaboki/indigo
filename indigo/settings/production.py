@@ -22,4 +22,8 @@ AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
 # STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
 MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/' 
 
+WKHTMLTOPDF_CMD_OPTIONS = {
+    'quiet': False,
+    'disable-javascript': True
+}
 WKHTMLTOPDF_CMD = 'xvfb-run -a wkhtmltopdf'
