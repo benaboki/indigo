@@ -143,6 +143,15 @@ npm install
 browserify indigo_app/static/lib/dom-utils.src.js > indigo_app/static/lib/dom-utils.js
 ```
 
+## wkhtmltopdf dependencies
+Indigo uses wkhtmltopdf to convert html to pdf
+On local download and install wkhtml from https://wkhtmltopdf.org/downloads.html 
+On production (using Dokku), Dokku recommends installing a wkhtmltopdf plugin developed by mbriskar on (http://dokku.viewdocs.io/dokku/community/plugins/). However, this module points to an incorrect pre-build-buildpack. Use the patched fork below:
+
+```
+sudo dokku plugin:install https://github.com/applivi/dokku-wkhtmltopdf.git wkhtmltopdf
+dokku ps:rebuild indigo
+```
 
 ## Testing
 
