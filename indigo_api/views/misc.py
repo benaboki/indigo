@@ -9,6 +9,6 @@ def ping(request):
 
 
 if settings.INDIGO_AUTH_REQUIRED:
-    DEFAULT_PERMS = (AllowAny)
+    DEFAULT_PERMS = (AllowAny,)
 else:
     DEFAULT_PERMS = (IsAuthenticatedOrReadOnly,)
