@@ -12,4 +12,3 @@ if settings.INDIGO_AUTH_REQUIRED:
     DEFAULT_PERMS = (IsAuthenticated,) 
 else:
     DEFAULT_PERMS = (IsAuthenticatedOrReadOnly,)
-    #DEFAULT_PERMS = (AllowAny,)
