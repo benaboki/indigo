@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.conf import settings
 
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly, AllowAny
 
 
 def ping(request):
@@ -9,6 +9,6 @@ def ping(request):
 
 
 if settings.INDIGO_AUTH_REQUIRED:
-    DEFAULT_PERMS = (IsAuthenticated,)
+    DEFAULT_PERMS = (AllowAny)
 else:
     DEFAULT_PERMS = (IsAuthenticatedOrReadOnly,)

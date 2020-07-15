@@ -299,16 +299,16 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 # REST
 # https://www.django-rest-framework.org/api-guide/permissions/ 
-#REST_FRAMEWORK = {
-#    'DEFAULT_AUTHENTICATION_CLASSES': [
-#        'rest_framework.authentication.SessionAuthentication',
-#    ],
-#    'DEFAULT_PERMISSION_CLASSES': [
-#        #'rest_framework.permissions.IsAuthenticated',
-#    ],
-#    'DEFAULT_PAGINATION_CLASS': 'indigo_api.utils.PageNumberPagination',
-#    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
-#}
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'indigo_api.utils.PageNumberPagination',
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+}
 
 
 SUPPORT_EMAIL = os.environ.get('SUPPORT_EMAIL')
