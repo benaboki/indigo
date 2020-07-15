@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.environ.get('DJANGO_DEBUG', 'false') == 'false'
-DEBUG = (os.environ.get('DJANGO_DEBUG') == 'false')
+DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if DEBUG:
@@ -298,12 +298,14 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 
 # REST
+# https://www.django-rest-framework.org/api-guide/permissions/ 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
+        #'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_PAGINATION_CLASS': 'indigo_api.utils.PageNumberPagination',
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
